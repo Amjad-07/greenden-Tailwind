@@ -24,8 +24,8 @@
 <body>
     <nav class="bg-green-100 p-3 flex  items-center justify-between shadow-2xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-8 md:hidden">
+        <svg   id="menuicon"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-8 md:hidden cursor-pointer">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
     
@@ -41,11 +41,27 @@
           </li>
         </ul>
       </nav>
+      <section id="side-nav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 " style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right">
+          <p class=" cursor-pointer p-3" id="close-navbar">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-600 items-center">
+          <li class="hover:underline   hover:text-black">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hover:underline  hover:text-black ">
+            <a href="Product.html">Product</a>
+          </li>
+          <li class="hover:underline  hover:text-black">
+            <a href="contact.html">Conduct</a>
+          </li>
+        </ul>
+       </section>
     <div class="text-center">
         <h1 class="font-bold mt-5 text-3xl text-center">Join our News Letter</h1>
-        <input type="text" class="border border-black rounded p-2 mt-5" style="width: 80%; outline: none;"
+        <input  id="search" type="text" class="border border-black rounded p-2 mt-5" style="width: 80%; outline: none;"
             placeholder="Search for a Product"><br>
-        <div class="grid grid-cols-2 mt-10 gap-5 md:grid-cols-4">
+        <div  id="product-container"   class="grid grid-cols-2 mt-10 gap-5 md:grid-cols-4">
             <div>
                 <img src="pot1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
                 <p>Rose Plant</p>
@@ -53,37 +69,37 @@
             </div>
             <div>
                 <img src="pot2.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <p>Lily Plant</p>
                 <p>$20</p>
             </div>
             <div>
                 <img src="pot3.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <p>Hibiscus Plant</p>
                 <p>$20</p>
             </div>
             <div>
                 <img src="pot4.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <p>New Plant</p>
                 <p>$20</p>
             </div>
             <div>
                 <img src="pot1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
-                <p>Rose Plant</p>
+                <p>Lotus Plant</p>
                 <p>$20</p>
             </div>
             <div>
                 <img src="pot2.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <p>Money Plant</p>
                 <p>$20</p>
             </div>
             <div>
                 <img src="pot3.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <p>Season Plant</p>
                 <p>$20</p>
             </div>
             <div>
                 <img src="pot4.png" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <p>Rose Plant</p>
+                <p>Sour Plant</p>
                 <p>$20</p>
             </div>
         </div>
@@ -97,5 +113,9 @@
 
 
 </body>
+<script src="index.js">
+
+</script>
+
 
 </html>
